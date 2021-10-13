@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Five</title>
+</head>
+
+<body>
+    <script>
+        // let arr = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+        // let i;
+        // for (i = 0; i < arr.length; i++) {
+        //     arr[i] = arr[i] * 2;
+        // }
+        // console.log(arr[i]);
+
+        // let arr2d = [
+        //     [0, 2, 4],
+        //     [6, 8, 10],
+        //     [12, 14, 16]
+        // ]
+
+        // for (let i = 0; i < arr2d.length; i++) {
+        //     console.log("Inside loop :", arr2d[i]);
+
+        //     for (let j = 0; j < arr2d[i].length; j++) {
+        //         console.log("Inside Nest :", arr2d[i][j]);
+
+
+        //     }
+        // }
+
+
+
+        // let arr1 = [
+        //     [1, 2, 3],
+        //     [4, 5, 6],
+        //     [7, 8, 9],
+        // ]
+
+        // let arr2 = [
+        //     [1, 2, 3],
+        //     [4, 5, 6],
+        //     [7, 8, 9],
+        // ]
+
+        // let arr3 = [];
+
+
+        // for (let i = 0; i < arr1.length; i++) {
+        //     arr3[i] = [];
+        //     for (let j = 0; j < arr2[i].length; j++) {
+        //         arr3[i].push(arr1[i][j] + arr2[i][j]);
+        //     }
+
+
+        // }
+        // console.log(arr3);
+
+        let numbers = [1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+        let newArr = numbers.map((eachitem, index) => {
+            console.log(index, "eachitem : ", eachitem);
+
+            if (eachitem % 2 === 0) {
+                return 0;
+            }
+            else {
+                return eachitem;
+            }
+        })
+
+        console.log("numbers :", numbers);
+        console.log("newArr :", newArr);
+
+    </script>
+</body>
+
+</html>
